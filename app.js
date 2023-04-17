@@ -4,10 +4,12 @@ const splitChatTexts = function (data) {
   return data.split(" ");
 };
 
-const findIndexOfHash = function (text) {
-  text.includes("#") ? console.log(text.indexOf("#")) : console.log(No);
+const findHashedTexts = function (data) {
+  const hashedTexts = splitChatTexts(data).filter((element) =>
+    element.includes("#")
+  );
 };
 
 const changeText2Emoji = function () {};
 
-findIndexOfHash(chatText);
+findHashedTexts(chatText);
