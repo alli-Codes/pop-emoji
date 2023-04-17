@@ -8,8 +8,12 @@ const findHashedTexts = function (data) {
   const hashedTexts = splitChatTexts(data).filter((element) =>
     element.includes("#")
   );
+  return hashedTexts;
 };
 
-const changeText2Emoji = function () {};
+const changeText2Emoji = function (data) {
+  const emojis = findHashedTexts(data).map((element) => (element = "*"));
+  console.log(emojis);
+};
 
-findHashedTexts(chatText);
+changeText2Emoji(chatText);
