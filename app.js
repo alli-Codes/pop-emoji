@@ -12,8 +12,12 @@ const findHashedTexts = function (data) {
 };
 
 const changeText2Emoji = function (data) {
-  const emojis = findHashedTexts(data).map((element) => (element = "*"));
+  const emojis = findHashedTexts(data).map((element) => (element = "😏"));
   console.log(emojis);
+};
+
+const findIndexOfHashedTexts = function (data) {
+  // data.
 };
 
 changeText2Emoji(chatText);
