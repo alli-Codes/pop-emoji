@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pop-emoji Extension</title>
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
       .input {
         background-color: white;
         height: 3rem;
-        width: 45rem;
+        width: 30rem;
         border: 1px solid black;
       }
-      input {
+      .input2 {
         height: 3rem;
         width: 25rem;
         margin-top: 1rem;
+        border: 1px solid black;
+
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="input" contenteditable="true"></div>
-      <input type="text" />
+      <div class="input2" contenteditable="true"></div>
+      <!-- <input type="text" /> -->
     </div>
 
     <script src="main.js"></script>
