@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Pop-Emoji",
+    "description": "Enable focus mode on Chrome's official Extensions and Chrome Web Store documentation.",
+    "version": "1.0",
+    "content_script": [
+        {
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
